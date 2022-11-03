@@ -1,0 +1,32 @@
+#5번문제
+import turtle
+t=turtle.Turtle()
+t.shape("turtle")
+t.left(45)
+t.forward(141)
+t.setheading(0)
+t.goto(0,0)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t._screen.exitonclick()
+
+#6번문제
+import math
+x1=int(input("x1의 값:"))
+y1=int(input("y1의 값:"))
+
+x2=int(input("x2의 값:"))
+y2=int(input("y2의 값:"))
+dist=math.sqrt((x2-x1)**2+(y2-y1)**2)
+print("두점 사이의 거리=",dist,"입니다")
+
+import turtle
+t=turtle.Turtle()
+t.shape("turtle")
+t.up()
+t.goto(x1,y1)
+t.down()
+t.goto(x2,y2)
+t.write("점의 길이"+str(dist))
+t._screen.exitonclick()
